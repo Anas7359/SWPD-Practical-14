@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Find Roots of Quadratic Equation</title>
+    <script>
+        function QuadEq() {
+            var b = 4, a = 9, c = 1;
+            var D = (b * b) - (4 * a * c);
+            var x1, x2;
+            if (D < 0) {
+                alert("Root do not exist!");
+            }
+            else if (D == 0) {
+                x1 = x2 = (-b / (2 * a));
+                alert("root 1 and root 2 is: " + x1 + " and " + x2);
+            }
+            else if (D > 0) {
+                x1 = (-b + Math.sqrt(D) / 2 * a);
+                x2 = (-b + Math.sqrt(D) / 2 * a);
+                alert("root 1 and root 2 is: " + x1 + " and " + x2);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    Click Here To Get Answer of Quadratic Equation:
+    <input type="button" onclick="QuadEq()" value="Answer">
+
+</body>
+
+</html>
